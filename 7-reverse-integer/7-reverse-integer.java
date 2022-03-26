@@ -11,8 +11,7 @@ class Solution {
             temp = temp/10;
             ans = ans*10+local;
         }
-        if(ans>Integer.MAX_VALUE) return 0;
-        else if(ans<Integer.MIN_VALUE) return 0;
+        if(ans>=Integer.MAX_VALUE || ans<=Integer.MIN_VALUE) return 0;
         else{
             if(flag ==1) return (int)(-ans);
             else return (int)ans;
